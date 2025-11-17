@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Locations - SereneCare Medical Center</title>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>📞 Emergency: 1-800-SERENE | 24/7 Support</div>
+            <div>
+                <a href="#patients">For Patients</a>
+                <a href="#providers">For Providers</a>
+                <a href="#careers">Careers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">SereneCare Medical</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Find a Doctor</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#health">Health Library</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find a Facility Near You</h1>
+        <p>Locate the SereneCare Medical Center that's most convenient for your healthcare needs</p>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-group">
+                    <label for="city">City or ZIP Code</label>
+                    <input type="text" id="city" placeholder="e.g., Springfield, IL or 62701" />
+                </div>
+                <div class="search-group">
+                    <label for="service">Service Type</label>
+                    <select id="service">
+                        <option>All Services</option>
+                        <option>Primary Care</option>
+                        <option>Emergency Room</option>
+                        <option>Cardiology</option>
+                        <option>Orthopedics</option>
+                        <option>Pediatrics</option>
+                        <option>Surgery</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <label for="distance">Distance Radius</label>
+                    <select id="distance">
+                        <option>All Distances</option>
+                        <option>5 miles</option>
+                        <option>10 miles</option>
+                        <option>25 miles</option>
+                        <option>50 miles</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-buttons">
+                <button class="btn btn-primary">Search Locations</button>
+                <button class="btn btn-secondary">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <div class="filter-section">
+                <div class="filter-title">Facility Type</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="hospital" checked />
+                    <label for="hospital">Hospital</label>
+                    <span class="filter-count">(8)</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="clinic" checked />
+                    <label for="clinic">Clinic</label>
+                    <span class="filter-count">(12)</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="urgent" />
+                    <label for="urgent">Urgent Care</label>
+                    <span class="filter-count">(5)</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="surgery" />
+                    <label for="surgery">Surgery Center</label>
+                    <span class="filter-count">(3)</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Specialties</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cardio" />
+                    <label for="cardio">Cardiology</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="ortho" />
+                    <label for="ortho">Orthopedics</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="peds" />
+                    <label for="peds">Pediatrics</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="mental" />
+                    <label for="mental">Mental Health</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="women" />
+                    <label for="women">Women's Health</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Accessibility</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="wheelchair" />
+                    <label for="wheelchair">Wheelchair Access</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="parking" />
+                    <label for="parking">Free Parking</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="virtual" />
+                    <label for="virtual">Virtual Visits</label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Locations List -->
+        <div>
+            <!-- Results Info -->
+            <div class="results-info">
+                <span class="results-count">Showing 28 locations</span>
+                <select class="sort-dropdown">
+                    <option>Sort by: Nearest</option>
+                    <option>Sort by: Name</option>
+                    <option>Sort by: Rating</option>
+                </select>
+            </div>
+
+<!-- Location Cards Grid -->
+            <div class="locations-grid">
+                <!-- Location Card 1 -->
+                <div class="location-card">
+                    <div class="location-image">[H]</div>
+                    <div class="location-content">
+                        <div class="location-name">Main Hospital Campus</div>
+                        <span class="location-type">Hospital</span>
+
+                        <div class="location-info">
+                            <div class="info-item">
+                                <span class="info-icon">▼</span>
+                                <span>1234 Medical Plaza Dr, Springfield, IL 62701</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≈</span>
+                                <span>(555) 123-4567</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">⌚</span>
+                                <span>24/7 Open</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≋</span>
+                                <span>2.3 miles away</span>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(324 reviews)</span>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-label">Available Services:</div>
+                            <span class="service-badge">Emergency</span>
+                            <span class="service-badge">Surgery</span>
+                            <span class="service-badge">Cardiology</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="card-btn card-btn-primary">Get Directions</button>
+                            <button class="card-btn card-btn-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Card 2 -->
+                <div class="location-card">
+                    <div class="location-image">[C]</div>
+                    <div class="location-content">
+                        <div class="location-name">East Side Clinic</div>
+                        <span class="location-type">Clinic</span>
+
+                        <div class="location-info">
+                            <div class="info-item">
+                                <span class="info-icon">▼</span>
+                                <span>5678 Healthcare Blvd, Springfield, IL 62702</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≈</span>
+                                <span>(555) 234-5678</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">⌚</span>
+                                <span>Mon-Fri 7AM-8PM</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≋</span>
+                                <span>4.1 miles away</span>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(287 reviews)</span>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-label">Available Services:</div>
+                            <span class="service-badge">Primary Care</span>
+                            <span class="service-badge">Pediatrics</span>
+                            <span class="service-badge">Orthopedics</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="card-btn card-btn-primary">Get Directions</button>
+                            <button class="card-btn card-btn-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Card 3 -->
+                <div class="location-card">
+                    <div class="location-image">[S]</div>
+                    <div class="location-content">
+                        <div class="location-name">West Springfield Specialty Center</div>
+                        <span class="location-type">Specialty Center</span>
+
+                        <div class="location-info">
+                            <div class="info-item">
+                                <span class="info-icon">▼</span>
+                                <span>9012 Wellness Way, Springfield, IL 62704</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≈</span>
+                                <span>(555) 345-6789</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">⌚</span>
+                                <span>Mon-Fri 8AM-6PM</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≋</span>
+                                <span>5.7 miles away</span>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(198 reviews)</span>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-label">Available Services:</div>
+                            <span class="service-badge">Cardiology</span>
+                            <span class="service-badge">Mental Health</span>
+                            <span class="service-badge">Women's Health</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="card-btn card-btn-primary">Get Directions</button>
+                            <button class="card-btn card-btn-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Card 4 -->
+                <div class="location-card">
+                    <div class="location-image">[U]</div>
+                    <div class="location-content">
+                        <div class="location-name">Downtown Urgent Care</div>
+                        <span class="location-type">Urgent Care</span>
+
+                        <div class="location-info">
+                            <div class="info-item">
+                                <span class="info-icon">▼</span>
+                                <span>3456 Central Ave, Springfield, IL 62703</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≈</span>
+                                <span>(555) 456-7890</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">⌚</span>
+                                <span>Daily 8AM-10PM</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">≋</span>
+                                <span>1.8 miles away</span>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(412 reviews)</span>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-label">Available Services:</div>
+                            <span class="service-badge">Urgent Care</span>
+                            <span class="service-badge">Walk-ins Welcome</span>
+                            <span class="service-badge">No Appointment Needed</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="card-btn card-btn-primary">Get Directions</button>
+                            <button class="card-btn card-btn-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Patient Care</h4>
+                <ul>
+                    <li><a href="#">Make an Appointment</a></li>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="#">Patient Portal Login</a></li>
+                    <li><a href="#">Medical Records</a></li>
+                    <li><a href="#">Billing & Insurance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Facilities</h4>
+                <ul>
+                    <li><a href="#">Find Locations</a></li>
+                    <li><a href="#">Services by Location</a></li>
+                    <li><a href="#">Parking Information</a></li>
+                    <li><a href="#">Visiting Hours</a></li>
+                    <li><a href="#">Maps & Directions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About SereneCare</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Quality & Safety</a></li>
+                    <li><a href="#">Research & Innovation</a></li>
+                    <li><a href="#">Community Outreach</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact & Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Emergency Services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SereneCare Medical Center. All rights reserved. | <a href="#" style="color: #999;">Privacy Policy</a> | <a href="#" style="color: #999;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
