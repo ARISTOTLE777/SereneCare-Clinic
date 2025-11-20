@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SereneCare Medical</title>
+    <!-- Link to the specific contact CSS file -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>📞 Emergency: 1-800-SERENE | 24/7 Support</div>
+            <div>
+                <a href="#">For Patients</a>
+                <a href="#">For Providers</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <!-- Link back to Home (../../index.html goes up two levels to root) -->
+            <div class="logo"><a href="../../index.html">SereneCare Medical</a></div>
+            <ul class="nav-links">
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="./src/pages/login.html">Patient Login</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We're Here to Help</h1>
+        <p>Have a question or need assistance? Reach out to our friendly team anytime.</p>
+    </section>
+
+    <!-- Main Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Left Side: Contact Info Cards -->
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2>Get in Touch</h2>
+                        <p>Reach us through any of these support channels.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">📞</div>
+                        <div class="details">
+                            <h3>Call Us</h3>
+                            <p><strong>General Support:</strong> (555) 123-4567</p>
+                            <p><strong>Appointments:</strong> (555) 987-6543</p>
+                            <p class="note">Available Mon-Fri, 8am - 8pm</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">📧</div>
+                        <div class="details">
+                            <h3>Email Us</h3>
+                            <p><strong>General:</strong> help@serenecare.com</p>
+                            <p><strong>Billing:</strong> billing@serenecare.com</p>
+                            <p class="note">We typically reply within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">📍</div>
+                        <div class="details">
+                            <h3>Visit Main Campus</h3>
+                            <p>1234 Medical Plaza Dr</p>
+                            <p>Springfield, IL 62701</p>
+                            <a href="#" class="map-link">View on Map →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h2>Send a Message</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option>General Inquiry</option>
+                                <option>Appointment Help</option>
+                                <option>Billing Question</option>
+                                <option>Feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you today?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Map Section (Placeholder) -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <h3>📍 Our Main Location on Google Maps</h3>
+            <p>[Interactive Map Would Load Here]</p>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Patient Care</h4>
+                <ul>
+                    <li><a href="#">Make an Appointment</a></li>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="#">Patient Portal Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers & Jobs</a></li>
+                    <li><a href="#">Newsletter Signup</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SereneCare Medical Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
