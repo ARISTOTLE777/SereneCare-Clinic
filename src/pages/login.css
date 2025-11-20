@@ -1,0 +1,210 @@
+/* =========================================
+   1. BASIC SETUP
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh; /* Makes body take up full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================
+   2. MAIN CONTAINER (The Split Screen)
+   ========================================= */
+.login-container {
+    display: flex; /* Puts Welcome and Form side-by-side */
+    width: 900px;
+    max-width: 95%; /* Ensures it fits on smaller screens */
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clips the corners */
+}
+
+/* =========================================
+   3. LEFT SIDE - WELCOME (Blue Section)
+   ========================================= */
+.login-welcome {
+    flex: 1; /* Takes up 50% of the space */
+    background: linear-gradient(135deg, #004080, #0056b3); /* Nice blue gradient */
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+
+.login-welcome h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-welcome p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9; /* Slightly see-through text looks fancy */
+    margin-bottom: 40px;
+}
+
+/* The little feature list on the left */
+.welcome-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-text {
+    background-color: rgba(255, 255, 255, 0.1); /* See-through white box */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* =========================================
+   4. RIGHT SIDE - FORM (White Section)
+   ========================================= */
+.login-form-container {
+    flex: 1; /* Takes up the other 50% */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    color: #0056b3;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   5. FORM ELEMENTS (Inputs & Buttons)
+   ========================================= */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Fills the container */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none; /* Removes the default browser blue outline */
+    transition: border-color 0.3s;
+}
+
+/* Change border color when user clicks inside */
+input:focus {
+    border-color: #0056b3;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* The Main Sign In Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #004494;
+}
+
+/* =========================================
+   6. EXTRA STUFF (Divider & Socials)
+   ========================================= */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 12px;
+    position: relative;
+}
+
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    flex: 1; /* Makes all 3 buttons equal width */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #555;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+}
