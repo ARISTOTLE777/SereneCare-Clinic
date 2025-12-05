@@ -1,210 +1,314 @@
-/* SereneCare Clinic Base Styles (Simplified CSS) */
-
-/* Color Palette:
-   Teal (Primary Action): #009688
-   Deep Blue (Accent/Logo/Footer): #004080
-   Light Background: #f8fcfd
-   Text Color: #333
-*/
-
-/* 1. Global & Utility Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f8fcfd;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #004080; /* Primary Color */
+    color: inherit;
 }
 
-a:hover {
-    color: #004080; /* Dark Accent */
+ul {
+    list-style: none;
 }
 
-/* Headings */
-h1, h2 {
-    color: #004080; /* Dark Accent */
-    text-align: center;
-    margin: 20px 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-h3, h4 {
-    color: #004080; /* Primary Color */
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 4px; /* Simple rounded corners */
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    margin-top: 10px;
-}
-
-.btn-primary {
-    background-color: #004080; /* Primary Color */
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #004080; /* Slightly darker teal */
-}
-
-.btn-secondary {
-    background-color: white;
-    color: #004080; /* Primary Color */
-    border: 1px solid #004080; /* Primary Color */
-}
-
-.btn-secondary:hover {
-    background-color: #e0f2f1;
-}
-
-/* 2. Top Bar & Header */
 .top-bar {
-    background-color: #004080; /* Dark Accent */
+    background-color: #004080;
     color: white;
     padding: 10px 0;
-    font-size: 0.9em;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
     background-color: white;
-    border-bottom: 1px solid #eee; /* Simple divider */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
 }
 
-.logo {
-    font-size: 1.5em;
+.logo a {
+    font-size: 24px;
     font-weight: bold;
-    color: #004080; /* Dark Accent */
+    color: #0056b3;
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: #333; /* Text Color */
-    padding: 5px 0;
-}
-
-/* 3. Hero Section */
-.hero, .about-hero {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #e6f7ff; /* Light hero background */
-}
-
-.hero p, .about-hero p {
-    max-width: 700px;
-    margin: 0 auto 20px;
     color: #555;
+    font-weight: bold;
 }
 
-.cta-buttons a {
-    margin: 0 10px;
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0056b3;
 }
 
-/* 4. Quick Access Cards */
-.quick-access {
+.about-hero {
+    background: linear-gradient(to right, #0056b3, #004080);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.mission h2 {
+    color: #004080;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mission > div {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.mission h3 {
+    color: #004080;
+    font-size: 24px;
+    margin: 40px 0 25px;
+}
+
+.values-list {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 30px 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.access-card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.values-list li {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    font-weight: 600;
+    color: #0056b3;
+    transition: all 0.3s ease;
     flex: 1;
     min-width: 150px;
     text-align: center;
 }
-.access-card h3 {
-    margin-top: 0;
+
+.values-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #0056b3, #004080);
+    color: white;
 }
 
-/* 5. General Section Styling */
-section {
+.leadership {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.leadership h2 {
+    color: #004080;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.leader-card {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    text-align: center;
+    border-left: 5px solid #0056b3;
+    transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.leader-card h3 {
+    color: #004080;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.leader-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.leader-card .detail {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto 0;
+    display: block;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+}
+
+.btn:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.4);
+}
+
+footer {
+    background-color: #002a55;
+    color: white;
     padding: 40px 0;
     text-align: center;
 }
 
-.section-title {
-    font-size: 1.8em;
-    margin-bottom: 30px;
-}
-
-/* 6. About Us and Content Styles */
-.values-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 500px;
-    text-align: left;
-}
-
-.values-list li {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-left: 3px solid #009688; /* Primary Color */
-}
-
-.leader-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 15px auto;
-    border-radius: 4px;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* 7. Footer */
-footer {
-    background-color: #004080; /* Dark Accent */
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.8em;
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 footer p {
-    margin: 0;
+    font-size: 14px;
+    color: #bbb;
 }
 
-/* Simple Mobile Adjustments */
-@media (max-width: 600px) {
-    .quick-access {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .about-hero {
+        padding: 60px 20px;
+    }
+    
+    .about-hero h1 {
+        font-size: 32px;
+    }
+    
+    .mission,
+    .leadership {
+        padding: 60px 0;
+    }
+    
+    .mission h2,
+    .leadership h2 {
+        font-size: 26px;
+    }
+    
+    .values-list {
         flex-direction: column;
+        gap: 15px;
+    }
+    
+    .values-list li {
+        min-width: auto;
+    }
+    
+    .leader-card {
+        padding: 30px 25px;
+        margin-bottom: 25px;
+    }
+    
+    .leader-card h3 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        padding: 15px 30px;
+        font-size: 15px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .about-hero h1 {
+        font-size: 28px;
+    }
+    
+    .about-hero p {
+        font-size: 16px;
+    }
+    
+    .mission h2,
+    .leadership h2 {
+        font-size: 24px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
     }
 }

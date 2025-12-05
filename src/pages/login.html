@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SereneCare Medical - Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="location.js"></script>
 </head>
 <body>
+    <div class="error-msg"></div>
     <div class="login-container">
         <!-- Left Side Welcome Section -->
         <div class="login-welcome">
@@ -58,7 +60,7 @@
                     <a href="#" class="forgot-password">Forgot Password?</a>
                 </div>
 
-                <button type="submit" class="login-btn">Sign In</button>
+                <button  onclick= "validateLogin()" class="login-btn">Log In</button>
             </form>
 
             <div class="divider">OR</div>
@@ -83,5 +85,6 @@
 
         </div>
     </div>
+    
 </body>
 </html>
