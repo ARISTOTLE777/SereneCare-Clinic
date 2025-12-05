@@ -1,0 +1,210 @@
+/* SereneCare Clinic Base Styles (Simplified CSS) */
+
+/* Color Palette:
+   Teal (Primary Action): #009688
+   Deep Blue (Accent/Logo/Footer): #004080
+   Light Background: #f8fcfd
+   Text Color: #333
+*/
+
+/* 1. Global & Utility Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8fcfd;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #004080; /* Primary Color */
+}
+
+a:hover {
+    color: #004080; /* Dark Accent */
+}
+
+/* Headings */
+h1, h2 {
+    color: #004080; /* Dark Accent */
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3, h4 {
+    color: #004080; /* Primary Color */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px; /* Simple rounded corners */
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #004080; /* Primary Color */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #004080; /* Slightly darker teal */
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #004080; /* Primary Color */
+    border: 1px solid #004080; /* Primary Color */
+}
+
+.btn-secondary:hover {
+    background-color: #e0f2f1;
+}
+
+/* 2. Top Bar & Header */
+.top-bar {
+    background-color: #004080; /* Dark Accent */
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #eee; /* Simple divider */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #004080; /* Dark Accent */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #333; /* Text Color */
+    padding: 5px 0;
+}
+
+/* 3. Hero Section */
+.hero, .about-hero {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #e6f7ff; /* Light hero background */
+}
+
+.hero p, .about-hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+.cta-buttons a {
+    margin: 0 10px;
+}
+
+/* 4. Quick Access Cards */
+.quick-access {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px 5%;
+}
+
+.access-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+.access-card h3 {
+    margin-top: 0;
+}
+
+/* 5. General Section Styling */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+/* 6. About Us and Content Styles */
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.values-list li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 3px solid #009688; /* Primary Color */
+}
+
+.leader-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 4px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #004080; /* Dark Accent */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Simple Mobile Adjustments */
+@media (max-width: 600px) {
+    .quick-access {
+        flex-direction: column;
+    }
+}
