@@ -393,6 +393,12 @@ footer {
     padding: 40px 15px;
   }
   
+  .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+  font-size: 10px;
+  }
   .quick-access {
     margin-top: -30px;
     padding: 0 15px;
