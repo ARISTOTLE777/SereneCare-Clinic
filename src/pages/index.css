@@ -354,3 +354,87 @@ footer {
   font-size: 12px;
   color: #888;
 }
+
+@media (max-width: 480px) {
+
+  .top-bar .container {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .top-bar a {
+    margin-left: 0;
+  }
+  
+  .hero {
+    padding: 40px 15px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .services-section,
+  .why-choose,
+  .locations-section,
+  .health-resources {
+    padding: 40px 15px;
+  }
+  
+  .quick-access {
+    margin-top: -30px;
+    padding: 0 15px;
+  }
+  
+  .access-card {
+    padding: 25px 20px;
+  }
+  
+  .service-item {
+    padding: 20px;
+  }
+  
+  .location-image {
+    height: 120px;
+    font-size: 1rem;
+  }
+  
+  .resource-card {
+    padding: 20px;
+  }
+  
+  footer {
+    padding: 40px 15px 20px;
+  }
+  
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+  
+  nav {
+    padding: 0 15px;
+  }
+  
+  .nav-links .mobile-open a{
+    padding: 18px 15px;
+    font-size: 18px;
+  }
+}

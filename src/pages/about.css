@@ -239,7 +239,7 @@ footer p {
     color: #bbb;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -288,27 +288,4 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .about-hero h1 {
-        font-size: 28px;
-    }
-    
-    .about-hero p {
-        font-size: 16px;
-    }
-    
-    .mission h2,
-    .leadership h2 {
-        font-size: 24px;
-    }
-    
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-}
+
